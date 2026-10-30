@@ -1,0 +1,31 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h1{
+    color: white;
+
+}
+.p{
+    color: white;
+}
+.box1{
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.input1{
+    background-color: white;
+    color: black;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    background-color: orangered;
+
+}
