@@ -1,31 +1,200 @@
-body{
-display: flex;
-justify-content: center;
-align-items: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-h1{
-    color: white;
 
+body {
+    background-color: #fff;
 }
-.p{
+
+/* Main Orange Section */
+.hero {
+    background: linear-gradient(120deg, #ff4d00, #fc8019);
+    min-height: 580px;
+    width: 100%;
     color: white;
+    padding: 25px 8%;
 }
-.box1{
-    height: 150px;
-    width: 150px;
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.app {
+    border: 1px solid white;
+    padding: 12px 18px;
+    border-radius: 12px;
+}
+
+.signin {
+    background: black;
+    padding: 14px 28px;
+    border-radius: 12px;
+}
+
+/* Main Content */
+.content {
+    text-align: center;
+    margin-top: 65px;
+}
+
+.content h1 {
+    font-size: 35px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.search-box input {
+    width: 280px;
+    padding: 17px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 13px;
+}
+
+.search-box button {
+    background: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.card {
+    background: #fff;
+    color: black;
+    width: 250px;
+    height: 215px;
+    border-radius: 25px;
+    padding: 22px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.card h2 {
+    font-size: 21px;
+}
+
+.card p {
+    color: gray;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.card span {
     display: inline-block;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
+    color: #fc8019;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
 }
-.input1{
-    background-color: white;
+
+.food-image {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 65px;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: #fc8019;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+/* Bottom Section */
+.bottom {
+    padding: 35px 10%;
     color: black;
 }
-.container{
-    height: 100%;
-    width: 100%;
-    padding: 100px;
-    background-color: orangered;
 
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .content h1 {
+        font-size: 25px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
 }

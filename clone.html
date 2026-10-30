@@ -3,29 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiggy clone</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Swiggy Homepage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-   <div class="container">
-    <header></header>
-      <p class="p">Swiggy</p>
-    <h1>Order food & groceries. Discover
-        best restaurnats. Swiggy it!
-    </h1>
-    </header>
-    <input  placeholder="Enter your delivery location" class="input1">
-    <input placeholder="Search for restaurants, item or more" class="input2">
-<br>
-    <div class="box1"> <h3><b>FOOD DELIVERY</b></h3></div>
-    <div class="box1"><h3><b>INSTAMART</b></h3>
-        <p>FROM RESTAURTANTS</p>
-        <P color="yellowred">UPTO 60% OFF</P>
-    </div>
-    <div class="box1"><h3><b>DINEOUT</b></h3></div>
 
-   </div>
-    
+    <section class="hero">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">🍴 Swiggy</div>
+
+            <div class="nav-links">
+                <a href="#">Swiggy Corporate</a>
+                <a href="#">Partner with us</a>
+                <a href="#" class="app">Get the App ↗</a>
+                <a href="#" class="signin">Sign in</a>
+            </div>
+        </nav>
+
+        <!-- Main Heading -->
+        <div class="content">
+            <h1>
+                Order food & groceries. Discover<br>
+                best restaurants. Swiggy it!
+            </h1>
+
+            <!-- Search Box -->
+            <div class="search-box">
+                <input type="text"
+                    placeholder="📍 Enter your delivery location">
+
+                <input type="text"
+                    placeholder="Search for restaurant, item or more">
+
+                <button>🔍</button>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="cards">
+
+                <div class="card">
+                    <h2>FOOD DELIVERY</h2>
+                    <p>FROM RESTAURANTS</p>
+                    <span>UPTO 60% OFF</span>
+                    <div class="food-image">🍛</div>
+                    <div class="arrow">➜</div>
+                </div>
+
+                <div class="card">
+                    <h2>INSTAMART</h2>
+                    <p>INSTANT GROCERY</p>
+                    <span>UPTO 60% OFF</span>
+                    <div class="food-image">🛒</div>
+                    <div class="arrow">➜</div>
+                </div>
+
+                <div class="card">
+                    <h2>DINEOUT</h2>
+                    <p>EAT OUT & SAVE MORE</p>
+                    <span>UPTO 50% OFF</span>
+                    <div class="food-image">🍽️</div>
+                    <div class="arrow">➜</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Section -->
+    <section class="bottom">
+        <h3>Order our best food options</h3>
+    </section>
+
 </body>
 </html>
